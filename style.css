@@ -1,5 +1,5 @@
 body {
-  font-family: Do Hyeon;
+  font-family: 'Jua', sans-serif;
   background-color: #ffffff;
 }
 
@@ -123,7 +123,6 @@ body {
 }
 
 .navbar-light .navbar-brand {
-  font-family: Do Hyeon;
   line-height: 1.68;
   text-align: left;
   color: #82CCFF; 
@@ -138,14 +137,12 @@ body {
 }
 
 .title {
-  font-family: Do Hyeon;
   line-height: 1.67;
   text-align: center;
   color: #35465d;
 }
 
 .subtitle {
-  font-family: Do Hyeon;
   line-height: 1.53;
   text-align: center;
   color: #82CCFF;
@@ -163,7 +160,6 @@ body {
 
 
 .youtube-link {
-    font-family: Do Hyeon;
     font-size: 1rem;
     line-height: 1.71;
     text-align: center;
@@ -172,7 +168,6 @@ body {
 }
 
 .youtube-link:hover {
-    font-family: Do Hyeon;
     font-size: 1rem;
     line-height: 1.71;
     text-align: center;
@@ -190,7 +185,6 @@ body {
 
 .upload-text {
     width: 58%;
-    font-family: Do Hyeon;
     font-size: 1.5rem;
     line-height: 1.53;
     text-align: center;
