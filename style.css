@@ -191,6 +191,12 @@ body {
     color: #35465d;
     margin: 0 auto;
 }
+
+.no-save {
+    font-size: 1rem;
+    color: #82CCFF;
+}
+
 .footer {
     background-color: initial;
     color: initial;

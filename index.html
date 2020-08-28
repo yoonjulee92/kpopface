@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>AI 아이돌 프리패스상 테스트</title>
+    <title> 
+    AI 아이돌 프리패스상 테스트 </title>
     <meta name="title" content="AI 아이돌 프리패스상 테스트">
     <meta name="subject" content="나는 어떤 소속사 아이돌과 닮았을까?">
     <meta name="keywords" content="아이돌상 테스트, 아이돌 프리패스상 테스트, 인공지능 아이돌 프리패스상 테스트, 인공지능 아이돌상 테스트, 얼굴상, 얼굴상 테스트, 나와 닮은 아이돌, 아이돌상 찾기, 얼굴로 보는 아이돌상, 얼굴 아이돌, 아이돌얼굴, idolface, JYP상, SM상, YG상, 인공지능 동물상, AI 얼굴상, AI 아이돌상">
@@ -27,6 +28,7 @@
 
 <body>
     <nav class="p-3 container navbar navbar-expand-lg navbar-light">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <a class="navbar-brand" href="https://idolface.site/">AI 아이돌 프리패스상 테스트</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -73,6 +75,7 @@
             <div class="drag-text">
                 <img src="https://img.icons8.com/cotton/64/000000/upload.png" class="mt-5 pt-5 upload">
                 <h3 class="mb-5 pb-5 pt-4  upload-text">얼굴 사진을 드래그<br>혹은<br>눌러서 업로드하세요!</h3>
+                <h4 class= "pb-2 no-save">*사진 데이터는 그 어디에도 전송되지 않습니다.*</h4>
             </div>
         </div>
         <div class="file-upload-content">
@@ -81,7 +84,7 @@
                 <div class="spinner-border" role="status">
                     <span class="sr-only">Loading...</span>
                 </div>
-                <p class="text-center">AI가 당신의 아이돌 프리패스상을 분석중입니다.</p>
+                <p class="text-center">AI가 당신의 아이돌 프리패스상을 분석중입니다.<br>본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.</p>
             </div>
             <p class="result-message"></p>
             <div id="label-container" class="d-flex flex-column justify-content-around"></div>
@@ -181,7 +184,7 @@
                         break;
                     case "YG":
                         resultTitle = "YG 프리패스상"
-                        resultExplain = "당신은 YG 소속사가 추구하는 진정한 힙스터로 매력적인 눈매와 어딘지 나쁜 남자 냄새가 나는 힙스터입니다!<br>사장님 취향이 소나무라 당신의 얼굴로는 마스크를 머리에 써도 YG 오디션 프리패스 가능합니다."
+                        resultExplain = "당신은 YG 소속사가 추구하는 진정한 힙스터입니다!<br>매력적인 눈매와 어딘지 나쁜 남자 냄새가 나는군요.<br>사장님 취향이 소나무라.. 당신은 마스크를 머리에 써도 YG 오디션 프리패스 가능합니다!"
                         resultCeleb = "YG 프리패스상 연예인: GD, 송민호, 탑, 비아이"
                         break;
                     default:
@@ -203,7 +206,7 @@
                         break;
                     case "YG":
                         resultTitle = "YG 프리패스상"
-                        resultExplain = "당신은 YG 소속사가 추구하는 진정한 힙스터로 매력적인 눈매의 걸크러시 월드스타감입니다!<br>사장님 취향이 소나무라 당신의 얼굴로는 누워서 잠꼬대를 해도 YG 오디션 프리패스 가능합니다."
+                        resultExplain = "당신은 YG 소속사가 추구하는 진정한 힙스터입니다!<br>매력적인 눈매의 걸크러시 월드스타감이군요.<br>사장님 취향이 소나무라.. 당신은 누워서 잠꼬대를 해도 YG 오디션 프리패스 가능합니다!"
                         resultCeleb = "YG 프리패스상 연예인: 제니, 지수, 리사(블랙핑크), 산다라박"
                         break;
                     default:
