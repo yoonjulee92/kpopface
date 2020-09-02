@@ -262,7 +262,8 @@ body {
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(170, 0, 255, 0.4);
+  width: 100%;
+  background-color: rgba(170, 0, 255, 0.2);
 }
 
 .BTS-bar {
