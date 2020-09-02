@@ -229,7 +229,7 @@ body {
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(252, 185, 196, 0.2);
+  background-color: rgba(0, 255, 0, 0.2);
 }
 .SM-bar {
   position: absolute;
@@ -237,7 +237,7 @@ body {
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(252, 185, 196, 1);
+  background-color: rgba(0, 255, 0, 1);
 }
 .YG-box {
   position: absolute;
@@ -303,10 +303,10 @@ body {
     font-size: 1.2rem;
 }
 .SM-animal-title {
-    color: rgba(252, 185, 196, 1);
+    color: rgba(0, 255, 0, 1);
 }
 .SM-animal-celeb {
-    color: rgba(252, 185, 196, 0.2);
+    color: rgba(0, 255, 0, 0.2);
     font-size: 1.2rem;
 }
 .YG-animal-title {
