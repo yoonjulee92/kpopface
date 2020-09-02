@@ -229,7 +229,7 @@ body {
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(270, 0, 114, 0.2);
+  background-color: rgba(252, 185, 196, 0.2);
 }
 .SM-bar {
   position: absolute;
@@ -237,7 +237,7 @@ body {
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(270, 0, 114, 1);
+  background-color: rgba(252, 185, 196, 1);
 }
 .YG-box {
   position: absolute;
@@ -246,9 +246,26 @@ body {
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(170, 0, 255, 0.2);
+  background-color: rgba(270, 0, 114, 0.2);
 }
 .YG-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(270, 0, 114, 1);
+}
+.BTS-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(170, 0, 255, 0.2);
+}
+
+.BTS-bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -286,18 +303,24 @@ body {
     font-size: 1.2rem;
 }
 .SM-animal-title {
-    color: rgba(270, 0, 114, 1);
+    color: rgba(252, 185, 196, 1);
 }
 .SM-animal-celeb {
-    color: rgba(270, 0, 114, 0.2);
+    color: rgba(252, 185, 196, 0.2);
     font-size: 1.2rem;
 }
 .YG-animal-title {
-    color: rgba(170, 0, 255, 1);
+    color: rgba(270, 0, 114, 1);
 }
 .YG-animal-celeb {
-    color: rgba(170, 0, 255, 0.2);
+    color: rgba(270, 0, 114, 0.2);
     font-size: 1.2rem;
+}
+.BTS-animal-title {
+    color: rgba(170, 0, 255, 1);
+}
+.BTS-animal-celeb {
+    color: rgba(170, 0, 255, 0.2);
 }
 
 /* gender */
