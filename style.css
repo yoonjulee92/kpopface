@@ -408,5 +408,9 @@ input:checked + label > .knob > i:before {
 
 .ad-banner {
     width: 320px;
-    margin:0 auto;
+    float: right;
+}
+.ad-top-banner {
+    width: 320px;
+    margin: 0 auto;
 }
