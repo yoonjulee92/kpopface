@@ -122,7 +122,7 @@ content="https://blog.kakaocdn.net/dn/b5esQ4/btqHR7wtPXY/4vd9xV812x74szsl0vFOF0/
             프리패스상 찾기를 할 수 있습니다.
         </p>
 
-        <h3 class="pb-2 pt-5 d-flex justify-content-center">성별을 선택하세요</h3>
+        <h3 class="pb-2 d-flex justify-content-center">성별을 선택하세요</h3>
         <section class="d-flex justify-content-center">
             <p class="d-flex align-items-center pr-3">여자</p>
             <div>
@@ -320,7 +320,7 @@ content="https://blog.kakaocdn.net/dn/b5esQ4/btqHR7wtPXY/4vd9xV812x74szsl0vFOF0/
                 const prediction = await model.predict(image, false);
                 prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
                 console.log(prediction[0].className);
-                var resultTitle, resultExplain, resultCeleb;
+                var resultTitle, resultExplain, resultCeleb, resultSearch;
                 if (document.getElementById('gender').checked) {
                     switch (prediction[0].className) {
                         case 'JYP':
@@ -329,6 +329,8 @@ content="https://blog.kakaocdn.net/dn/b5esQ4/btqHR7wtPXY/4vd9xV812x74szsl0vFOF0/
                                 '당신은 JYP가 좋아죽는 상으로 매력적인 눈웃음이 포인트! <br>한번 빠지면 헤어나오기 힘든 눈웃음과 깡으로 똘똘뭉친 당신은 진정한 인싸입니다!<br>사장님 취향이 소나무라.. 당신은 머리를 일주일 안감아도<br>JYP 오디션 프리패스 가능합니다.';
                             resultCeleb =
                                 'JYP 프리패스상 연예인: 비, JB(GOT7), 준호(2PM), 택연(2PM), 손호영(GOD)';
+                            resultSearch =
+                                '"네이버에 <아이돌 프리패스상 테스트>라고 검색하세요!"';
                             break;
                         case 'SM':
                             resultTitle = 'SM 프리패스상';
@@ -336,23 +338,31 @@ content="https://blog.kakaocdn.net/dn/b5esQ4/btqHR7wtPXY/4vd9xV812x74szsl0vFOF0/
                                 '당신은 수박상(이수만이 박수칠 상)으로<br>뚜렷하고 시원한 이목구비와 매력적인 턱을 가진 미남의 정석입니다!<br>사장님 취향이 소나무라... 당신은 배 깔고 누워만 있어도<br>SM 오디션 프리패스 가능합니다.';
                             resultCeleb =
                                 'SM 프리패스상 연예인: 수호(EXO), 민호(샤이니), 최강창민, 최시원, 강타';
+                            resultSearch =
+                                '"네이버에 <아이돌 프리패스상 테스트>라고 검색하세요!"';
                             break;
                         case 'YG':
                             resultTitle = 'YG 프리패스상';
                             resultExplain =
                                 '당신은 YG 소속사가 추구하는 진정한 힙스터입니다!<br>매력적인 눈매와 어딘지 나쁜 남자 냄새가 나는군요.<br>사장님 취향이 소나무라.. 당신은 마스크를 머리에 써도<br>YG 오디션 프리패스 가능합니다!';
                             resultCeleb = 'YG 프리패스상 연예인: GD, 송민호, 탑, 비아이';
+                            resultSearch =
+                                '"네이버에 <아이돌 프리패스상 테스트>라고 검색하세요!"';
                             break;
                         case 'BTS':
                             resultTitle = 'Big Hit 프리패스상';
                             resultExplain =
                                 '당신은 BTS 제 8의 멤버입니다!<br>신비스러운 분위기에 대중을 압도하는 아우라가 남다르군요.<br>사장님 취향이 소나무라.. 당신은 가만히 있어도<br>Big Hit 오디션 프리패스 가능합니다.';
                             resultCeleb = 'Big Hit 프리패스상 연예인: RM, 뷔, 정국, 진, 지민, 슈가, 제이홉';
+                            resultSearch =
+                               '"네이버에 <아이돌 프리패스상 테스트>라고 검색하세요!"';
                             break;
                         default:
                             resultTitle = '알수없음';
                             resultExplain = '';
                             resultCeleb = '';
+                            resultSearch =
+                                '"나의 아이돌 프리패스상을 알아보고 싶다면<br>네이버에 <아이돌 프리패스상 테스트>라고 검색"';
                     }
                 } else {
                     switch (prediction[0].className) {
@@ -362,6 +372,8 @@ content="https://blog.kakaocdn.net/dn/b5esQ4/btqHR7wtPXY/4vd9xV812x74szsl0vFOF0/
                                 '당신은 JYP가 좋아죽는 상으로 매력적인 눈웃음이 포인트!<br>한번 빠지면 헤어나오기 힘든 눈웃음과 깡으로 똘똘뭉친 당신은 진정한 인싸입니다!<br>사장님 취향이 소나무라.. 당신은 가만히 있어도<br>JYP 오디션 프리패스 가능합니다.';
                             resultCeleb =
                                 'JYP 프리패스상 연예인: 수지, 소희(원더걸스), 나연(트와이스), 다현(트와이스), 예지(ITZY)';
+                            resultSearch =
+                                '"네이버에 <아이돌 프리패스상 테스트>라고 검색하세요!"';
                             break;
                         case 'SM':
                             resultTitle = 'SM 프리패스상';
@@ -369,6 +381,8 @@ content="https://blog.kakaocdn.net/dn/b5esQ4/btqHR7wtPXY/4vd9xV812x74szsl0vFOF0/
                                 '당신은 수박상(이수만이 박수칠 상)으로<br>토끼같은 눈매와 청순한 분위기를 가진 미녀의 정석입니다!<br>사장님 취향이 소나무라.. 당신은 가만히 있어도<br>SM 오디션 프리패스 가능합니다.';
                             resultCeleb =
                                 'SM 프리패스상 연예인: 아이린(레드벨벳), 태연(소녀시대), 크리스탈, 보아, 서현진';
+                            resultSearch =
+                                '"네이버에 <아이돌 프리패스상 테스트>라고 검색하세요!"';
                             break;
                         case 'YG':
                             resultTitle = 'YG 프리패스상';
@@ -376,11 +390,15 @@ content="https://blog.kakaocdn.net/dn/b5esQ4/btqHR7wtPXY/4vd9xV812x74szsl0vFOF0/
                                 '당신은 YG 소속사가 추구하는 진정한 힙스터입니다!<br>매력적인 눈매의 걸크러시 월드스타감이군요.<br>사장님 취향이 소나무라.. 당신은 누워서 잠꼬대를 해도<br>YG 오디션 프리패스 가능합니다!';
                             resultCeleb =
                                 'YG 프리패스상 연예인: 제니, 지수, 리사(블랙핑크), 산다라박';
+                            resultSearch =
+                                '"네이버에 <아이돌 프리패스상 테스트>라고 검색하세요!"';
                             break;
                         default:
                             resultTitle = '알수없음';
                             resultExplain = '';
                             resultCeleb = '';
+                            resultSearch =
+                               '"네이버에 <아이돌 프리패스상 테스트>라고 검색하세요!"';
                     }
                 }
                 var title =
@@ -396,7 +414,8 @@ content="https://blog.kakaocdn.net/dn/b5esQ4/btqHR7wtPXY/4vd9xV812x74szsl0vFOF0/
                     "-animal-celeb pt-2 pb-2'>" +
                     resultCeleb +
                     '</div>';
-                $('.result-message').html(title + explain + celeb);
+                var search = "<div class='animal-search pt-2'> "+ resultSearch + '</div>';
+                $('.result-message').html(title + explain + celeb + search);
                 var barWidth;
                 for (let i = 0; i < maxPredictions; i++) {
                     if (prediction[i].probability.toFixed(2) > 0.1) {

@@ -293,6 +293,17 @@ body {
 }
 
 
+.animal-search {
+    font-size: 1.5rem;
+     background: #55ffaa;
+    background: -webkit-linear-gradient(left, #55ff55, #55ffff);
+    background:    -moz-linear-gradient(right, #55ff55, #55ffff);
+    background:      -o-linear-gradient(right, #55ff55, #55ffff);
+    background:         linear-gradient(to right, #55ff55, #55ffff);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+}
 .animal-explain {
     font-size: 1.5rem;
 }
