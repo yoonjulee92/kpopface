@@ -410,10 +410,7 @@ input:checked + label > .knob > i:before {
     width: 200px;
     float: right;
 }
-.ad-top-banner {
-    width: 320px;
-    margin: 0 auto;
-}
+
 .ad-left-banner {
     width: 100px;
     float: left;
