@@ -415,6 +415,6 @@ input:checked + label > .knob > i:before {
     margin: 0 auto;
 }
 .ad-left-banner {
-    width: 200px;
+    width: 100px;
     float: left;
 }
